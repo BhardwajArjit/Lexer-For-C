@@ -1,10 +1,15 @@
-# This is a sample Python code
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
+#include <stdio.h>
 
-result = factorial(5)
-print("Factorial of 5:", result)
+int main() {
+    int a = 10;
+    float b = 3.14;
+    char c = 'X';
+    
+    printf("Hello, world!\n");
+    printf("The value of integer a is %d\n", a);
+    printf("The value of float b is %f\n", b);
+    printf("The value of char c is %c\n", c);
+    
+    return 0;
+}
 
