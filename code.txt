@@ -4,11 +4,15 @@ int main() {
     int a = 10;
     float b = 3.14;
     char c = 'X';
+    int d = 7;
+    float e = a + b * d;
     
     printf("Hello, world!\n");
     printf("The value of integer a is %d\n", a);
     printf("The value of float b is %f\n", b);
     printf("The value of char c is %c\n", c);
+    printf("The value of int d is %f\n", d);
+    printf("The value of float e is %f\n", e);
     
     return 0;
 }
