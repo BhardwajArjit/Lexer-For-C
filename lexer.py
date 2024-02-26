@@ -1,6 +1,8 @@
-# Lexer for C in Python
+# Lexer for C in Python  
+
 import re
 import random
+from tabulate import tabulate
 
 class CLexer:
     def __init__(self, code):
@@ -70,3 +72,7 @@ class CLexer:
     def get_tokens(self):
         return self.tokens
     
+    def display_tokens_table(self):
+        headers = ["Token Type", "Token Value", "Address"]
+        token_data = [(token[0], token[1], token[2] if len(token) == 3 else "") for token in self.tokens]
+        print(tabulate(token_data, headers=headers, tablefmt="grid"))
